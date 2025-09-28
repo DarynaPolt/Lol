@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+
+body {
+    background-color: #DEE6B0;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     background-color: #FFF9F2;
     padding: 10px 0 4px 0;
@@ -152,4 +160,192 @@
         margin-left: 0;
         margin-top: 10px;
     }
+}
+
+.main-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0; /* Прибирає відстань */
+    min-height: 700px; /* або підберіть під ваш контент */
+}
+
+.gradient-rect {
+    position: relative;
+    width: 953px;
+    height: 659px;
+    margin: 0 auto;
+    margin-top:0;
+    margin-right: 0;
+    border-radius: 0;
+    background: linear-gradient(180deg, #FFD3C4 0%, #FCF7EC 100%);
+}
+
+.price-block {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 40px 0 0 40px; /* позиція всередині gradient-rect */
+}
+
+.price-circle {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 280px;
+    height: 280px;
+    background: #FFFCF7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transform: rotate(-17.75deg);
+}
+
+.price-text {
+    font-family: 'Saira Condensed', Arial, sans-serif;
+    font-size: 96px;      /* було 48px */
+    font-weight: 400;     /* зробити жирним */
+    color: #FFAE92;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    margin-left: 0px;
+    transform: rotate(30deg);
+}
+
+.collection-title {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-family: 'Book Antiqua', serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: #858339;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.collection-subtitle {
+    position: absolute;
+    top: 130px; /* підлаштуйте під ваш макет */
+    left: 170px; /* підлаштуйте під ваш макет */
+    font-family: 'Caveat', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: #858339;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.matcha-block {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.matcha-title {
+    position: static;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #BFBD80;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.matcha-subtitle {
+    position: static;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF7F2;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: right;
+    text-transform: none;
+    margin-bottom: 2px; /* було 8px */
+}
+
+.matcha-desc {
+    position: static;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF7F2;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: right;
+    opacity: 0.5;
+    margin-top: 2px; /* було 8px */
+}
+
+.matcha-img {
+    position: absolute;
+    top: 5px;
+    right: 150px;
+    width: 600px;
+    transform: rotate(5deg);
+    z-index: 3;
+    pointer-events: none;
+    transition: right 0.5s cubic-bezier(.4,0,.2,1), transform 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.matcha-block:hover .matcha-title,
+.matcha-block:hover .matcha-subtitle,
+.matcha-block:hover .matcha-desc {
+    color: #BFBC80;
+    opacity: 1; /* для .matcha-desc, щоб текст був чіткіший */
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.matcha-block:hover ~ .matcha-img {
+    right: 250px;
+    transform: translateX(-20px) rotate(-40deg);
+}
+
+.matcha-title,
+.matcha-subtitle,
+.matcha-desc {
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.matcha-rect {
+    position: absolute;
+    top: 0;
+    right: 0; /* повертаємо на праву сторону */
+    width: 467px;
+    height: 548px;
+    background: #FFF9F2;
+    opacity: 0;
+    border-radius: 80px 0 0 80px; /* округлення справа */
+    transition: opacity 0.5s; 
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Поява прямокутника при наведенні */
+.matcha-block:hover ~ .matcha-rect {
+    right: 0;
+    opacity: 0.8;
+}
+
+.page-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
