@@ -206,9 +206,9 @@ body {
 }
 
 .price-text {
-    font-family: 'Saira Condensed', Arial, sans-serif;
-    font-size: 96px;      /* було 48px */
-    font-weight: 400;     /* зробити жирним */
+    font-family: 'Book Antiqua', Arial, sans-serif;
+    font-size: 76px;  
+    font-weight: 400;    
     color: #FFAE92;
     line-height: 1;
     letter-spacing: 0;
@@ -219,13 +219,13 @@ body {
 
 .collection-title {
     position: absolute;
-    top: 30px;
+    top: 60px;
     left: 40px;
-    font-family: 'Book Antiqua', serif;
-    font-size: 96px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 128px;
     font-weight: 400;
     color: #858339;
-    line-height: 50px;
+    line-height: 75px;
     letter-spacing: 0;
     text-align: left;
     z-index: 2;
@@ -233,10 +233,10 @@ body {
 
 .collection-subtitle {
     position: absolute;
-    top: 130px; /* підлаштуйте під ваш макет */
-    left: 170px; /* підлаштуйте під ваш макет */
-    font-family: 'Caveat', cursive;
-    font-size: 96px;
+    top: 210px;
+    left: 200px; 
+    font-family: 'Book Antiqua', cursive;
+    font-size: 64px;
     font-weight: 400;
     color: #858339;
     line-height: 1;
@@ -258,7 +258,7 @@ body {
 
 .matcha-title {
     position: static;
-    font-family: 'Ruslan Display', cursive;
+    font-family: 'Book Antiqua', cursive;
     font-size: 40px;
     font-weight: 400;
     color: #BFBD80;
@@ -271,7 +271,7 @@ body {
 
 .matcha-subtitle {
     position: static;
-    font-family: 'Ruslan Display', cursive;
+    font-family: 'Book Antiqua', cursive;
     font-size: 24px;
     font-weight: 400;
     color: #FFF7F2;
@@ -284,11 +284,11 @@ body {
 
 .matcha-desc {
     position: static;
-    font-family: 'Ruslan Display', cursive;
-    font-size: 24px;
+    font-family: 'Book Antiqua', cursive;
+    font-size: 32px;
     font-weight: 400;
     color: #FFF7F2;
-    line-height: 22px;
+    line-height: 25px;
     letter-spacing: 0;
     text-align: right;
     opacity: 0.5;
@@ -310,13 +310,13 @@ body {
 .matcha-block:hover .matcha-subtitle,
 .matcha-block:hover .matcha-desc {
     color: #BFBC80;
-    opacity: 1; /* для .matcha-desc, щоб текст був чіткіший */
+    opacity: 1;
     transition: color 0.3s, opacity 0.3s;
 }
 
 .matcha-block:hover ~ .matcha-img {
-    right: 250px;
-    transform: translateX(-20px) rotate(-40deg);
+    right: 275px;
+    transform: translateX(1px) rotate(-33deg);
 }
 
 .matcha-title,
@@ -328,12 +328,12 @@ body {
 .matcha-rect {
     position: absolute;
     top: 0;
-    right: 0; /* повертаємо на праву сторону */
+    right: 0; 
     width: 467px;
-    height: 548px;
+    height: 580px;
     background: #FFF9F2;
     opacity: 0;
-    border-radius: 80px 0 0 80px; /* округлення справа */
+    border-radius: 80px 0 0 80px; 
     transition: opacity 0.5s; 
     z-index: 1;
     pointer-events: none;
