@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 body {
-    background-color: #DEE6B0;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -348,4 +349,99 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
+}
+
+.left-rect {
+        position: relative;
+    width: 487px;
+    height: 659px;
+    margin: 0 auto;
+    margin-top:0;
+    margin-right: 0;
+    border-radius: 0;
+    background: #DEE6B0;
+}
+
+.left-rect-inner {
+     position: absolute;
+    width: 487px;
+    height: 347px;
+    margin: 0 auto;
+    margin-top:0;
+    margin-right: 0;
+    border-radius: 0;
+    background: radial-gradient( ellipse, #FFD3C4 0%, #DEE6B0 70%  );
+    bottom: 0px;
+}
+
+.left-rect-text {
+    position: absolute;
+    top: -300px;
+    left: 10px;
+    font-family: 'Book Antiqua', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    color: #FCF7EC;
+    letter-spacing: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.left-rect-text-2 {
+    position: absolute;
+    top: -260px;
+    left: 10px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: #FCF7EC;
+    letter-spacing: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.left-rect-subtext {
+    position: absolute;
+    top: -180px;
+    left: 10px;
+    font-family: 'Book Antiqua', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    color: #FCF7EC;
+    letter-spacing: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.left-rect-subtext-2 {
+    position: absolute;
+    top: -190px;
+    left: 250px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: #FCF7EC;
+    letter-spacing: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.left-rect-subtext-3 {
+    position: absolute;
+    top: -110px;
+    left: 350px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    color: #FCF7EC;
+    letter-spacing: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.cake-img {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    width: 420px;
 }
